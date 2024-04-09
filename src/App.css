@@ -1,0 +1,155 @@
+#root {
+  body {
+    background-color: #f8f9fa;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li::before {
+    content: '🍕';
+    margin-right: 0.5rem;
+  }
+  
+  .card-title,
+  .card-text {
+    text-transform: capitalize;
+  }
+  
+  .price {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    color: #e63946;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-cart {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  /*Carrito*/
+  
+  .list-group-item {
+    padding: 1rem;
+  }
+
+  .item-name {
+    text-transform: capitalize;
+    margin-left: 3px;
+    margin-right: 3px;
+    flex-grow: 1;
+  }
+
+  .btn-quantity {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-quantity:first-of-type {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .quantity-badge {
+    font-size: 1rem;
+  }
+  
+  .total-price {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .btn-checkout {
+    padding: 0.5rem 2rem;
+    font-size: 1.25rem;
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  /* Pizza */  
+  .pizza-detail-container {
+    margin-top: 3rem;
+  }
+  
+  .pizza-detail-card {
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    width: 100%;
+    margin: 3rem auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pizza-detail-image {
+    width: 45%;
+    object-fit: cover;
+    height: auto;
+  }
+  
+  .pizza-detail-body {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+  }
+  
+  .pizza-ingredients-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pizza-ingredient-item {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .pizza-ingredient-item::before {
+    content: '🍕';
+    margin-right: 0.5rem;
+  }
+  
+  .price-and-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .price-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .add-to-cart-button {
+    padding: 0.375rem 1.5rem;
+    font-size: 1rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+}
